@@ -12,5 +12,6 @@ mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
 })
 
-  .then(db => console.log('Database is connected'))
-  .catch(err => console.log(err));
+  // eslint-disable-next-line no-unused-vars
+  .then((db) => console.log('Database is connected'))
+  .catch((err) => console.log(err));
