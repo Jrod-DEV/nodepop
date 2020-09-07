@@ -1,0 +1,42 @@
+{
+  "name": "nodepop",
+  "version": "1.0.0",
+  "description": "WEB-API/node.js/MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jrod-DEV/nodepop.git"
+  },
+  "keywords": [
+    "nodepop"
+  ],
+  "author": "Jrod-Dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jrod-DEV/nodepop/issues"
+  },
+  "homepage": "https://github.com/Jrod-DEV/nodepop#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.2",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "js": "^0.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.3",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "npm-check-updates": "^8.1.1"
+  }
+}
