@@ -4,6 +4,7 @@ const express = require('express');
 
 const exphbs = require('express-handlebars');
 const path = require('path'); // Setting that allows node to find the 'views' folder in any enviroment.
+const morgan = require('morgan');
 
 // Initializations
 const app = express();
@@ -22,12 +23,12 @@ app.set('view engine', '.hbs');
 // Middlewares
 // Conversion of any data type that comes from a formulary through methods to JSON.
 app.use(express.urlencoded({ extended: false }));
-
+app.use(morgan('dev'));
 // Gobal Variables
 
-// Routes
-// URLs
+// Routes - URLs
 app.use(require('./routes/index.routes'));
+app.use(require('./routes/anuncios.routes'));
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));

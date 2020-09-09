@@ -6,16 +6,21 @@ const AnuncioSchema = new Schema({
     type: String,
     required: true,
   },
-  venta: Boolean,
+  venta: {
+    type: Boolean,
+    required: true,
+  },
   precio: {
     type: Number,
     required: true,
   },
-  foto: String,
-  required: true,
+  foto: {
+    type: String,
+    required: true,
+  },
   tags: [String],
 }, {
   timestamps: true, // Nos lanzazrá la hora de creación del anuncio
 });
 
-module.exports = model('Anuncio', AnuncioSchema);
+module.exports = model('Anuncio', AnuncioSchema, 'anuncios');
