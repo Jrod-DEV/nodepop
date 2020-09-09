@@ -19,8 +19,10 @@ anunciosCtrl.createNewAnuncio = async (req, res) => {
   res.send('New anuncio created');
 };
 
-anunciosCtrl.renderAnuncios = (req, res) => {
-  res.send('Render anuncios');
+anunciosCtrl.renderAnuncios = async (req, res) => {
+  const anuncios = await Anuncio.find();
+  res.render('anuncios/all-anuncios', { anuncios });
+  // res.send('Render anuncios');
 };
 
 anunciosCtrl.renderEditForm = (req, res) => {
