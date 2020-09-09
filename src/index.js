@@ -7,5 +7,5 @@ const app = require('./server');
 require('./database');
 
 app.listen(app.get('port'), () => {
-  console.log('Listening on port:', app.get('port'));
+  console.log('Listening on port', `${app.get('port')} at: http://localhost:3000`);
 });
